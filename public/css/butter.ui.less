@@ -1,0 +1,150 @@
+/* This Source Code Form is subject to the terms of the MIT license
+ * If a copy of the MIT license was not distributed with this file, you can
+ * obtain one at https://raw.github.com/mozilla/butter/master/LICENSE */
+
+@import "globals";
+@import "webfonts";
+@import "normalize";
+@import "utilities";
+
+@import "common";
+
+@import "ui-states";
+@import "buttons";
+@import "dialog";
+
+@import "editors";
+@import "media-editor";
+
+@import "header";
+@import "tray";
+@import "tray-status-bar";
+@import "tray-timeline";
+
+@import "plugin-module";
+@import "project-editor";
+@import "super-scrollbar";
+
+@import "webmakernav";
+
+/* Style for Canvas */
+#tracks-container-canvas {
+  position: absolute !important;
+  top: 0;
+  z-index: 0;
+  left: 0 !important;
+}
+
+/* Compensate for the header */
+.butter-header {
+    height: 62px;
+}
+.butter-editor-area,
+.butter-editor-close-btn {
+    top: 62px;
+}
+/* Hide dialog-overlay for dialogs */
+.butter-modal-overlay-empty {
+    width: 0;
+}
+
+.butter-track {
+    /*height: 24px;*/
+}
+
+
+.butter-track-event {
+    /* Show handle points on hover for every track */
+    overflow: visible;
+    z-index: 1;
+
+    /* Selected track event "out of flow" */
+    &.out-of-flow {
+        border-color: rgb(181, 63, 63); // red
+    }
+    /* Change background color for tracks running */
+    &.running:not(.hideFlow) {
+        background-color: lavender;
+    }
+    /* Handle points */
+    .handle-point {
+        position: absolute;
+        background-color: rgba(51, 199, 38, 0.43);
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+        border: white 1px solid;
+        z-index: 100;
+        top: 6px;
+        overflow: hidden;
+        display: none;
+    }
+    .handle-point:hover {
+        cursor: crosshair;
+    }
+
+    .left-handle-line {
+        left: -13px;
+    }
+    .right-handle-line {
+        right: -13px;
+    }
+    &.trackevent-small .left-handle-line {
+        left: -20px;
+    }
+    &.trackevent-small .right-handle-line {
+        right: -20px;
+    }
+    /* Highlight box */
+    &.highlight {
+        border-color: rgb(5, 41, 56);
+    }
+    &[selected="true"] .handle-point, &:hover .handle-point {
+        display: block;
+    }
+
+    /* Change background of the trackEvent when is a superTrackEvent */
+    &[super-track-event="cornflowerblue"] {
+        background: cornflowerblue;
+    }
+    &[super-track-event="darkslategrey"] {
+        background: darkslategrey;
+    }
+    &[super-track-event="darkseagreen"] {
+        background: darkseagreen;
+    }
+    &[super-track-event="yellowgreen"] {
+        background: yellowgreen;
+    }
+    &[super-track-event="steelblue"] {
+        background: steelblue;
+    }
+    &[super-track-event="indianred"] {
+        background: indianred;
+    }
+    &[super-track-event="chocolate"] {
+        background: chocolate;
+    }
+    &[super-track-event="darkcyan"] {
+        background: darkcyan;
+    }
+    &[super-track-event="seagreen"] {
+        background: seagreen;
+    }
+    &[super-track-event="brown"] {
+        background: brown;
+    }
+    &.super-track-event .title,
+    &.sub-track-event .title {
+        color: white;
+    }
+    &.super-track-event {
+        background-image: linear-gradient(transparent 50%, rgba(255,255,255,.5) 50%);
+        background-size: 50px 50px;
+    }
+    &.sub-track-event[data-butter-trackevent-type="animatePlugin"] {
+        background-image: repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(255,255,255,.4) 10px, rgba(255,255,255,.4) 20px);
+    }
+
+}
+

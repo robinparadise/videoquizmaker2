@@ -1,0 +1,138 @@
+/*********************************************************
+* UI STATES
+*/
+
+/* Hidden */
+.butter-hidden {
+  display: none !important;
+}
+
+.butter-disabled {
+  opacity: 0.5;
+  .selectable( none );
+  cursor: not-allowed !important;
+}
+
+/* Warning for unsupported browsers */
+.butter-warning {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: #FFF;
+  background: @red;
+  z-index: @HEADER_Z_INDEX + 10;
+  font-size: 10pt;
+  text-align: left;
+  line-height: 1.2;
+  overflow: hidden;
+  span {
+    margin-top: -100%;
+    display: block;
+    position: relative;
+    padding: 1em;
+    .box-sizing( border-box );
+    .transition( margin-top 0.2s linear 1s);
+  }
+  &.slide-out span {
+    margin-top: 0;
+  }
+  a {
+    color: #FFF;
+  }
+}
+
+/* Spinny */
+.butter-logo-spin-outer {
+  width: 16px;
+  height: 16px;
+  .transition( opacity 0.5s );
+  opacity: 1;
+  &.fade-out {
+    opacity: 0;
+  }
+}
+
+.butter-spinner {
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  background-image: url( "../resources/icons/spinny.gif" );
+  &.hidden {
+    display: none;
+  }
+}
+
+.invalid-field {
+  .butter-spinner {
+    background-image: url( "../resources/icons/spinny-error.gif" );
+  }
+}
+
+/* Toggle hide/show button for editor and tray */
+
+.butter-toggle-button {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background-image: url( "../resources/icons/glyphiconshalflings-grey.png" );
+  background-position: -313px -119px;
+  cursor: pointer;
+  &:hover {
+    background-image: url( "../resources/icons/glyphiconshalflings-alt.png" );
+  }
+  &.toggled {
+    background-position: -288px -120px;
+  }
+}
+
+/* Targets and highlighting */
+
+.butter-highlight-on {
+  box-shadow: 0 0 0 10px @green;
+}
+
+.butter-highlight-fade {
+  .transition( box-shadow 1.5s );
+  box-shadow: 0 0 0 10px transparent;
+}
+
+.butter-iframe-fix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  opacity: 0;
+  z-index: @BASE_Z_INDEX;
+  display: none;
+}
+
+/*********************************************************
+* Drop down
+*/
+
+.butter-dropdown-off {
+  visibility: hidden;
+}
+
+
+/*********************************************************
+* Tabzilla
+*/
+
+.tabzilla-open {
+  &.butter-header-spacing {
+    padding-top: @TABZILLA_HEIGHT + @HEADER_SPACING;
+  }
+  .butter-header {
+    top: @TABZILLA_HEIGHT;
+    z-index: @MODAL_Z_INDEX;
+    box-shadow: 0 -1px 0 0 #CCC;
+  }
+  #tabzilla {
+    top: -1px;
+  }
+}
+

@@ -1,0 +1,82 @@
+{
+  "name": "default-config",
+  "baseDir": "../",
+  "crashReporter": true,
+  "cssRenderClientSide": false,
+  "snapshotHTMLOnReady": false,
+  "scrapePage": true,
+  "backupInterval": 0,
+  "title": "Videoquiz Maker",
+  "ui": {
+    "enabled": true,
+    "onLeaveDialog": true,
+    "trackEventHighlight": "click"
+  },
+  "makeVideoURLsUnique": true,
+  "mediaDefaults": {
+    "frameAnimation": true
+  },
+  "trackEvent": {
+    "defaultDuration": 5
+  },
+  "plugin": {
+    "plugins": [
+      {
+        "type": "quizme",
+        "icon": "{{baseDir}}templates/assets/plugins/quizme/quizme-icon.png"
+      },
+      {
+        "type": "text",
+        "icon": "{{baseDir}}templates/assets/plugins/text/text-icon.png"
+      },
+      {
+        "type": "popup",
+        "icon": "{{baseDir}}templates/assets/plugins/popup/popup-icon.png"
+      },
+      {
+        "type": "googlemap",
+        "icon": "{{baseDir}}resources/icons/map.png"
+      },
+      {
+        "type": "image",
+        "icon": "{{baseDir}}templates/assets/plugins/image/image-icon.png"
+      },
+      {
+        "type": "wikipedia",
+        "icon": "{{baseDir}}templates/assets/plugins/wikipedia/wikipedia-icon.png"
+      },
+      {
+        "type": "loopPlugin",
+        "displayName": "loop",
+        "icon": "{{baseDir}}templates/assets/plugins/loopPlugin/loop-icon.png"
+      },
+      {
+        "type": "skip",
+        "icon": "{{baseDir}}templates/assets/plugins/skip/skip-icon.png"
+      },
+      {
+        "type": "pausePlugin",
+        "displayName": "Pause",
+        "icon": "{{baseDir}}templates/assets/plugins/pausePlugin/pause-icon.png"
+      },
+      {
+        "type": "animatePlugin",
+        "displayName": "Animate",
+        "icon": "{{baseDir}}templates/assets/plugins/animatePlugin/animatePlugin-icon.png"
+      },
+      {
+        "type": "sequencer",
+        "hidden": true,
+        "icon": "{{baseDir}}resources/icons/media.png"
+      }
+    ]
+  },
+  "dirs": {
+    "css": "{{baseDir}}css/",
+    "resources": "{{baseDir}}resources/"
+  },
+  "icons": {
+    "default": "popcorn-icon.png",
+    "image": "image-icon.png"
+  }
+}

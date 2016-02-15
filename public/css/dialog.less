@@ -1,0 +1,633 @@
+/*********************************************************
+* DIALOGS
+*/
+
+@_overlayOpacity: 0.75; // How dark is the overlay?
+@_dialogWidth: 600px; // Width of dialog
+@_dialogPadding: 25px; // Inner padding
+@_dialogTopMargin: 100px; // How far should the dialog be from the top of the window?
+
+.butter-modal-overlay {
+  z-index: @MODAL_Z_INDEX;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  &.fade-in {
+    opacity: 1;
+    .transition( opacity 0.3s );
+  }
+  &.butter-modal-overlay-dark-bg {
+    right: 0;
+    bottom: 0;
+    background: rgba( 0, 0, 0, @_overlayOpacity );
+  }
+}
+
+.butter-dialog {
+  font-size: 14px;
+  line-height: 1.4;
+  color: @baseText;
+  position: relative;
+  width: @_dialogWidth;
+  padding: @_dialogPadding;
+  margin: @_dialogTopMargin auto;
+  background: #FFF;
+  border-radius: 2px;
+  box-shadow: 0 10px 10px -10px #000;
+  .box-sizing( border-box );
+
+  &.small {
+    width: 330px;
+    text-align: center;
+  }
+
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    z-index: 1000;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .butter-dialog-title {
+    margin: 0 0 10px 0;
+  }
+
+  .butter-form {
+    margin-bottom: 10px;
+    textarea {
+      padding: 10px;
+      min-height: 150px;
+    }
+  }
+  .butter-dialog-body {
+    padding: 20px;
+  }
+
+  /*SVG*/
+  svg {
+    position: absolute !important;
+    height: 30%;
+    bottom: 0;
+  }
+  @-webkit-keyframes polygon {
+    0% {
+      stroke-dasharray:0 300;
+    }
+    100% {
+      stroke-dasharray:300 0;
+    }
+  }
+  @keyframes polygon {
+    0% {
+      stroke-dasharray:0 300;
+    }
+    100% {
+      stroke-dasharray:300 0;
+    }
+  }
+  polygon {
+    stroke-width: 1;
+    fill: transparent;
+    stroke: #AAA; 
+    stroke-miterlimit: 10; 
+  }
+  polyline, line {
+    stroke: #AAA;
+  }
+
+  circle {
+    fill: #AAA;
+  }
+
+}
+
+/* Lists */
+.manager-list, .manager-sublist {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+.manager-list > li {
+  text-align: left;
+  float: left;
+  min-width: 162px;
+  display: block;
+  list-style: none;
+  padding: 1%;
+}
+.manager-sublist > li {
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
+  text-align: left;
+  border: 1px solid #DDD;
+  background: #FFF;
+  box-shadow: rgba(0, 0, 0, .1) 1px 5px 2px -3px;
+  color: @baseText;
+  font-size: 13px;
+  margin-bottom: 0px;
+  cursor: pointer;
+  height: auto;
+  line-height: inherit;
+  padding: 5px;
+}
+
+/* Scrollbars */
+.scrollbar-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.scrollbar-outer, .scrollbar-inner {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  height: 100%;
+}
+.butter-scroll-bar.butter-scroll-bar-v {
+  top: 0;
+  right: 2px;
+  width: 10px;
+  bottom: 0;
+}
+
+// Style for Quiz Manager
+.quizmanager {
+  margin-left:auto;
+  margin-right:auto;
+  width: 800px;
+  height: 80%;
+  min-height: 590px;
+  min-width: 863px;
+  margin: 3% auto;
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 0px;
+  .manager-list {
+    height: 80%;
+  }
+  fieldset {
+    margin: 0 !important;
+  }
+  .butter-form-align-center {
+    padding-top: 30px;
+    text-align: center;
+  }
+  .butter-btn {
+    width: auto;
+    height: auto;
+    padding: 0 10px;
+  }
+  .add-update-question[value=Add] {
+    display: inline-block !important;
+  }
+  .delete-question, .add-new-quiz {
+    display: none;
+    cursor: pointer;
+  }
+  .wrapper-icon {
+    width: 100%;
+    text-align: center;
+  }
+  .icon-plus, .icon-minus {
+    background-color: @greyGreen;
+    border-radius: 7px;
+    margin: 10px;
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+    cursor: pointer;
+    &.add-quiz {
+      background-color: @green;
+    }
+    &.delete-quiz {
+      &.selected {
+        background-color: salmon;
+      }
+    }
+  }
+  .scrollbar-container.quizzes-container {
+    width: 162px;
+  }
+  .scrollbar-container.questions-container, .list-questions {
+    width: 350px;
+  }
+  .quizzes-container, .questions-container {
+    top: 30px;
+  }
+  .manager-sublist.question-edit {
+    width: 250px;
+  }
+  .manager-sublist.quizzes > li.selected {
+    background: @green;
+    color: white;
+  }
+  .manager-sublist.questions > li.selected {
+    background: @greyGreen;
+    color: white;
+  }
+  label.import-quiz, label.export-quiz {
+    left: 20px;
+    padding: 10px 0;
+    position: absolute;
+    cursor: pointer;
+    display: inline;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  label.import-quiz {
+    left: 15%;
+  }
+  .space-unused {
+    color: rgba(0,0,0,0);
+  }
+  #import-quiz {
+    position: absolute;
+    left: -9999px;
+  }
+  .error-quizmanager {
+    padding: 10px 0;
+    float: right;
+    text-shadow: 0px 0px 1px rgba(255,0,0,.6);
+  }
+  #spinner-wrapper {
+    position: absolute;
+    background: rgba(5,5,5,0.1);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    .loading-message {
+      position: absolute;
+      z-index: 1000;
+      margin-left: -10%;
+      margin-top: 0;
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+// Style for dinamic dialog (popup for lines)
+.butter-dinamic-dialog {
+  left: 200px;
+  top: 20px;
+  width: 300px;
+  height: 350px;
+  padding: 0px;
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  -moz-box-shadow: 0 0 4px rgba(0,0,0,0.8);
+  -webkit-filter: drop-shadow(0 0 4px rgba(0,0,0,.8));
+  filter: drop-shadow(0 0 4px rgba(0,0,0,0.8));
+  &.butter-modal-overlay {
+    height: 0;
+    width: 0;
+  }
+  fieldset, .trackevent-property {
+    margin: 6px 6px 0 16px !important;
+  }
+  .dinamic-body {
+    margin: 0px;
+    padding: 0 0 20px 0;
+  }
+  .popup-tab-body {
+    position: absolute;
+    height: 285px;
+    width: 300px;
+    .popup-tab {
+      .fieldset-value-pass-time {
+        padding-left: 30px;
+        padding-right: 10px;
+      }
+      .questions {
+        width: 287px;
+        fieldset {
+          margin: 0px 6px !important;
+        }
+        li {
+          background-color: @baseLight;
+        }
+        li.selected {
+          background-color: rgba(0,0,0,0);
+          border: 1px;
+          border-color: rgba(0,0,0,0);
+        }
+        .answer-label.correct-answer {
+          font-weight: bold;
+        }
+        .specific-answer {
+          margin-left: 10%;
+          width: 88%;
+        }
+      }
+      width: 100%;
+    }
+    input[type="radio"] {
+      width: auto;
+      margin-left: -20px;
+      margin-top: 8px;
+    }
+    .butter-form-radio {
+      padding-left: 20px;
+    }
+  }
+  .butter-dialog-title {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0px;
+    border-bottom: 0px;
+    height: @_editorHeaderHeight;
+    line-height: @_editorHeaderHeight;
+    background: @baseDark;
+    color: white;
+    padding: 0px 10px;
+    margin: 0px;
+    z-index: 100;
+  }
+  .popup-tab-header {
+    position: relative;
+    right: 0;
+    left: 0px;
+    border-bottom: @_editorHeaderBorder solid @green;
+    height: @_editorHeaderHeight;
+    background: @baseDark;
+    z-index: 100;
+    > ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      list-style: none;
+
+      > .popup-tab-header-li {
+        float: left;
+        position: relative;
+        top: 0;
+      }
+    }
+    .butter-btn {
+      background: none;
+      border: none;
+      color: #FFF;
+      font-size: 14px;
+      padding: 0 10px;
+      border-radius: 0;
+      height: @_editorHeaderHeight;
+      line-height: @_editorHeaderHeight;
+      &.butter-active {
+        background: @green;
+      }
+      &.butter-editor-btn-disabled {
+        color: rgba( 255, 255, 255, 0.3 );
+        > .icon {
+          opacity: 0.3;
+        }
+      }
+    }
+  }
+  .delete, .delete2 {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    bottom: -10px;
+    cursor: pointer;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  #append-hidden-elements {
+    display: none;
+  }
+  .bottom-border {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    z-index: 1000;
+    bottom: 0;
+  }
+  /* Arrows */
+  .butter-dialog-offset:after, .butter-dialog-offset:before {
+    top: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    /*pointer-events: none;*/
+    z-index: 1000;
+    border-color: rgba(136, 183, 213, 0);
+    border-top-color: #FFF;
+    border-width: 30px;
+    left: 50%;
+    margin-left: -30px;
+  }
+} /* Dialog Dinamic */
+
+.butter-feedback-form {
+  padding: 0;
+  background: lighten( #EEE, 3% );
+  font-size: 13px;
+  .butter-dialog-title {
+    border-bottom: 1px solid #CCC;
+    .gradient( "vertical", #FFF, #EEE );
+    box-shadow: 0 1px #FFF;
+    border-radius: 3px 3px 0 0;
+    padding: 10px 35px;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+    .icon-info-sign {
+      opacity: 0.2;
+      margin: 3px 0 0 3px;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    p {
+      font-weight: normal;
+      font-size: 13px;
+    }
+  }
+  .butter-logo {
+    position: absolute;
+    top: -35px;
+    left: -25px;
+    width: 50px;
+  }
+  .butter-form {
+    padding: 8px 0;
+    label {
+      position: relative;
+      padding-left: 60px;
+      padding-bottom: 20px;
+    }
+    textarea {
+      font-size: 11px;
+      font-family: menlo, mono;
+      box-shadow: 0 1px 0 #FFF;
+      &:focus {
+        box-shadow: inset 0 2px 4px -2px #CCC,
+        0 1px 0 #FFF;
+        border-color: #AAA;
+        .transition( all 0.5s ease );
+      }
+    }
+  }
+  strong {
+    color: @red;
+  }
+  .butter-btn {
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+}
+
+.dialog-hidden {
+  display: none;
+}
+
+.dialog-scrollable {
+  height: 150px;
+  overflow-y: scroll;
+  pre {
+    font-size: 11px;
+    font-family: menlo, mono;
+  }
+}
+
+.ticket-icon {
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background: url( "/resources/icons/ticket.png" ) top center no-repeat;
+}
+
+/*********************************************************
+* First-run
+*/
+
+.first-run {
+  .butter-editor-area {
+    z-index: @MODAL_Z_INDEX + 1;
+  }
+  .butter-modal-container {
+    position: relative;
+    z-index: @MODAL_Z_INDEX + 1;
+  }
+}
+
+.butter-first-run-dialog {
+  position: fixed;
+  right: 360px;
+  top: 160px;
+  -moz-animation: bounce ease 1s;
+  -webkit-animation: bounce ease 1s;
+  -o-animation: bounce ease 1s;
+  animation: bounce ease 1s;
+
+  h2 {
+    font-size: 1.2em;
+    margin: 0;
+    margin-left: 10px;
+    font-weight: 400;
+  }
+  .butter-logo {
+    top: 50%;
+    margin-top: -40px;
+    left: 0;
+  }
+
+  .triangle( "right", 20px, @baseLight, 1px, #CCC );
+
+  .butter-dialog-title {
+    padding: 10px 0 10px 50px;
+  }
+  .butter-dialog-body {
+    padding: 20px 20px 20px 50px;
+  }
+  p {
+    margin-top: 0;
+  }
+  width: 400px;
+}
+
+.overlay-highlight {
+  z-index: @MODAL_Z_INDEX + 1;
+  position: relative;
+}
+
+.butter-tooltip.tooltip-popup,
+.butter-tooltip.tooltip-media {
+  h3 {
+    margin: 0 0 5px 0;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 3px;
+  }
+}
+
+.butter-tooltip.tooltip-popup.tooltip-on,
+.butter-tooltip.tooltip-media.tooltip-on {
+  background: #F8EDAB;
+  &:after {
+    border-bottom-color: #F8EDAB;
+  }
+}
+
+.butter-tooltip.tooltip-popup {
+  text-transform: none;
+}
+
+.butter-tooltip.tooltip-media {
+  width: 150px;
+  margin-left: -75px;
+  .center-div {
+    display: inline-block;
+  }
+}
+
+@-moz-keyframes bounce {
+  0% { right: 360px; }
+  50% { right: 345px; }
+  100% { right: 360px; }
+}
+
+@-webkit-keyframes bounce {
+  0% { right: 360px; }
+  50% { right: 345px; }
+  100% { right: 360px; }
+}
+
+@-o-keyframes bounce {
+  0% { right: 360px; }
+  50% { right: 345px; }
+  100% { right: 360px; }
+}
+
+@keyframes bounce {
+  0% { right: 360px; }
+  50% { right: 345px; }
+  100% { right: 360px; }
+}
+
+

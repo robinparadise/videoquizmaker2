@@ -1,0 +1,1089 @@
+{
+    "targets": [{
+        "id": "Target0",
+        "name": "video-container",
+        "element": "video-container"
+    }],
+    "media": [{
+        "id": "Media0",
+        "name": "Media0",
+        "url": ["#t=,225"],
+        "target": "video",
+        "duration": 225,
+        "controls": false,
+        "tracks": [{
+            "name": "Layer",
+            "id": "0",
+            "trackEvents": [
+	      {
+		"id": "TrackEvent0",
+		"type": "text",
+		"popcornOptions": {
+		  "start": 0,
+		  "end": 2,
+		  "target": "video-container",
+		  "setMedia": 0,
+		  "text": "Tutorial: Videoquiz Maker",
+		  "linkUrl": "",
+		  "position": "custom",
+		  "alignment": "center",
+		  "transition": "popcorn-fade",
+		  "fontFamily": "Merriweather",
+		  "fontSize": 10,
+		  "fontColor": "#000000",
+		  "shadow": false,
+		  "shadowColor": "#444444",
+		  "background": false,
+		  "backgroundColor": "#888888",
+		  "left": 0,
+		  "top": 32.92952976423082,
+		  "width": 99.76553341148886,
+		  "zindex": 1000
+		},
+		"track": "0",
+		"name": "TrackEvent0"
+	      },
+	      {
+		"id": "TrackEvent1",
+		"type": "text",
+		"popcornOptions": {
+		  "text": "Videoquiz Maker allows you to embed content from the web....",
+		  "linkUrl": "",
+		  "position": "custom",
+		  "alignment": "center",
+		  "start": 2.25,
+		  "end": 7.25,
+		  "transition": "popcorn-fade",
+		  "fontFamily": "Merriweather",
+		  "fontSize": 10,
+		  "fontColor": "#000000",
+		  "shadow": false,
+		  "shadowColor": "#444444",
+		  "background": false,
+		  "backgroundColor": "#888888",
+		  "left": 0,
+		  "top": 32.92952976423082,
+		  "width": 99.76553341148886,
+		  "zindex": 999,
+		  "target": "video-container"
+		},
+		"track": "0",
+		"name": "TrackEvent1"
+	      },
+	      {
+		"id": "TrackEvent2",
+		"type": "popup",
+		"popcornOptions": {
+		  "start": 9.25,
+		  "end": 11,
+		  "target": "video-container",
+		  "left": 60.37148300117233,
+		  "top": 24.99674351960401,
+		  "setMedia": 0,
+		  "text": "Awesome",
+		  "linkUrl": "",
+		  "type": "speech",
+		  "triangle": "bottom left",
+		  "sound": false,
+		  "icon": "error",
+		  "flip": true,
+		  "width": 30.011723329425553,
+		  "transition": "popcorn-pop",
+		  "fontFamily": "Merriweather",
+		  "fontSize": 0,
+		  "fontPercentage": "8",
+		  "fontColor": "#668B8B",
+		  "fontDecorations": {
+		    "bold": false,
+		    "italics": false,
+		    "underline": false
+		  },
+		  "zindex": 1000
+		},
+		"track": "0",
+		"name": "TrackEvent2"
+	    },
+	    {
+		"id": "TrackEvent3",
+		"type": "text",
+		"popcornOptions": {
+		  "text": "The Wikipedia...",
+		  "linkUrl": "",
+		  "position": "custom",
+		  "alignment": "center",
+		  "start": 12,
+		  "end": 15,
+		  "transition": "popcorn-fade",
+		  "fontFamily": "Merriweather",
+		  "fontSize": 10,
+		  "fontColor": "#000000",
+		  "shadow": false,
+		  "shadowColor": "#444444",
+		  "background": false,
+		  "backgroundColor": "#888888",
+		  "left": 49.47245017584994,
+		  "top": 34.38843298163345,
+		  "width": 50.175849941383355,
+		  "zindex": 1000,
+		  "target": "video-container",
+		  "setMedia": 0
+		},
+		"track": "0",
+		"name": "TrackEvent3"
+	    },
+	    {
+		"id": "TrackEvent4",
+		"type": "text",
+		"popcornOptions": {
+		  "start": 16,
+		  "end": 19,
+		  "target": "video-container",
+		  "setMedia": 0,
+		  "text": "Google Maps",
+		  "linkUrl": "",
+		  "position": "custom",
+		  "alignment": "right",
+		  "transition": "popcorn-pop",
+		  "fontFamily": "Merriweather",
+		  "fontSize": 10,
+		  "fontColor": "#000000",
+		  "shadow": true,
+		  "shadowColor": "#fffefe",
+		  "background": false,
+		  "backgroundColor": "#888888",
+		  "left": 0.3516998827667058,
+		  "top": 67.73479223655073,
+		  "width": 96.6002344665885,
+		  "zindex": 1000
+		},
+		"track": "0",
+		"name": "TrackEvent4"
+	    }, 
+	    {
+		"id": "TrackEvent45",
+		"type": "text",
+		"popcornOptions": {
+		  "start": 75.24162,
+		  "end": 82,
+		  "target": "video-container",
+		  "setMedia": 4,
+		  "text": "You can create different paths and assure it with some specific rules...",
+		  "linkUrl": "",
+		  "position": "custom",
+		  "alignment": "left",
+		  "transition": "popcorn-fade",
+		  "fontFamily": "Merriweather",
+		  "fontSize": 10,
+		  "fontColor": "#000000",
+		  "shadow": false,
+		  "shadowColor": "#444444",
+		  "background": false,
+		  "backgroundColor": "#888888",
+		  "left": 0,
+		  "top": 16.669923147062654,
+		  "width": 41.96951934349355,
+		  "zindex": 1000
+		},
+		"track": "0",
+		"name": "TrackEvent45"
+	    },
+	    {
+		"id": "TrackEvent48",
+		"type": "text",
+		"popcornOptions": {
+		  "start": 84.4989,
+		  "end": 89.4989,
+		  "target": "video-container",
+		  "left": 36.92665592028136,
+		  "top": 55.435065780904004,
+		  "setMedia": 5,
+		  "text": "Each answer has different paths",
+		  "linkUrl": "",
+		  "position": "custom",
+		  "alignment": "left",
+		  "transition": "popcorn-fade",
+		  "fontFamily": "Merriweather",
+		  "fontSize": 10,
+		  "fontColor": "#000000",
+		  "shadow": false,
+		  "shadowColor": "#444444",
+		  "background": false,
+		  "backgroundColor": "#888888",
+		  "width": 62.71981242672919,
+		  "zindex": 1000
+		},
+		"track": "0",
+		"name": "TrackEvent48"
+	    },
+	    {
+              "id": "TrackEvent54",
+              "type": "text",
+              "popcornOptions": {
+		"start": 116.69814,
+		"end": 118.69814,
+		"target": "video-container",
+		"setMedia": 7,
+		"text": "That right!",
+		"linkUrl": "",
+		"position": "custom",
+		"alignment": "center",
+		"transition": "popcorn-fade",
+		"fontFamily": "Merriweather",
+		"fontSize": 10,
+		"fontColor": "#000000",
+		"shadow": true,
+		"shadowColor": "#c3c3c3",
+		"background": false,
+		"backgroundColor": "#888888",
+		"left": 0,
+		"top": 46.47648821154097,
+		"width": 99.76553341148886,
+		"zindex": 1000
+	      },
+	      "track": "0",
+	      "name": "TrackEvent54"
+	    },
+	    {
+              "id": "TrackEvent40",
+              "type": "image",
+              "popcornOptions": {
+		"start": 200.27883,
+		"end": 202.68782,
+		"target": "video-container",
+		"left": 40.328253223915596,
+		"top": 17.67617558942295,
+		"setMedia": 11,
+		"src": "http://farm8.staticflickr.com/7373/12263003594_011c901311_o.png",
+		"linkSrc": "",
+		"tags": "",
+		"photosetId": "",
+		"count": 3,
+		"width": 59.78898007033998,
+		"height": 82.32382441057705,
+		"innerTop": 0,
+		"innerLeft": 0,
+		"innerWidth": 100,
+		"innerHeight": 100,
+		"title": "",
+		"transition": "popcorn-fade",
+		"zindex": 1000,
+		"isSuperTrackEvent": false,
+		"subTrackEvents": []
+	      },
+	      "track": "0",
+	      "name": "TrackEvent40"
+	    }]
+        }, {
+            "name": "Layer",
+            "id": "1",
+            "trackEvents": [
+	    {
+              "id": "TrackEvent10",
+              "type": "wikipedia",
+              "popcornOptions": {
+		"start": 12,
+		"end": 15,
+		"target": "video-container",
+		"lang": "en",
+		"src": "Popcorn.js",
+		"width": 49.12075029308324,
+		"height": 99.6222482740654,
+		"top": 0,
+		"left": 0,
+		"zindex": 1000
+	      },
+	      "track": "1",
+	      "name": "TrackEvent10"
+	    },
+	    {
+              "id": "TrackEvent16",
+              "type": "text",
+              "popcornOptions": {
+		"text": "This is an image",
+		"linkUrl": "",
+		"position": "custom",
+		"alignment": "center",
+		"start": 8,
+		"end": 11,
+		"transition": "popcorn-fade",
+		"fontFamily": "Merriweather",
+		"fontSize": 10,
+		"fontColor": "#000000",
+		"shadow": false,
+		"shadowColor": "#444444",
+		"background": false,
+		"backgroundColor": "#888888",
+		"left": 0,
+		"top": 3.7202380952380953,
+		"width": 99.82142857142857,
+		"zindex": 999,
+		"target": "video-container"
+	      },
+	      "track": "1",
+	      "name": "TrackEvent16"
+	    },
+	    {
+              "id": "TrackEvent26",
+              "type": "googlemap",
+              "popcornOptions": {
+		"start": 16,
+		"end": 19,
+		"target": "video-container",
+		"setMedia": 0,
+		"type": "ROADMAP",
+		"location": "Toronto, Ontario, Canada",
+		"fullscreen": false,
+		"heading": 0,
+		"pitch": 1,
+		"zoom": 10,
+		"transition": "popcorn-fade",
+		"left": 0,
+		"top": 0,
+		"width": 99.76553341148886,
+		"height": 99.6222482740654,
+		"lat": 0,
+		"lng": 0,
+		"zindex": 999
+	      },
+	      "track": "1",
+	      "name": "TrackEvent26"
+	    },
+	    {
+              "id": "TrackEvent27",
+              "type": "text",
+              "popcornOptions": {
+		"start": 20,
+		"end": 23,
+		"target": "video-container",
+		"setMedia": 0,
+		"text": "and pretty awesome Quizzes",
+		"linkUrl": "",
+		"position": "custom",
+		"alignment": "center",
+		"transition": "popcorn-fade",
+		"fontFamily": "Merriweather",
+		"fontSize": 10,
+		"fontColor": "#000000",
+		"shadow": false,
+		"shadowColor": "#444444",
+		"background": false,
+		"backgroundColor": "#888888",
+		"left": 0,
+		"top": 41.26611957796014,
+		"width": 99.76553341148886,
+		"zindex": 999
+	      },
+	      "track": "1",
+	      "name": "TrackEvent27"
+	    },
+	    {
+              "id": "TrackEvent18",
+              "type": "quizme",
+              "popcornOptions": {
+		"start": 35.6528,
+		"end": 41.49515,
+		"target": "video-container",
+		"setMedia": 1,
+		"title": "Quiz",
+		"name": "Tutorial",
+		"review": false,
+		"random": false,
+		"hideDetails": true,
+		"customFontSize": "19",
+		"color": "darkGrey",
+		"customColor": "#052938",
+		"customHeaderFontColor": "#ffffff",
+		"customBodyColor": "#ffffff",
+		"customBodyFontColor": "#000000",
+		"help": "Read very carefully",
+		"intro": "",
+		"numOfQuizQues": "2",
+		"indexQuestion": "0",
+		"width": 75.3810082063306,
+		"height": 99.6222482740654,
+		"top": 0,
+		"left": 9.964830011723329,
+		"transition": "popcorn-none",
+		"block": "No",
+		"zindex": 999,
+		"quizJSON": {
+		  "Tutorial": {
+		    "multiList": [
+		      {
+			"ques": "Can you get this question wrong?",
+			"ansSel": [
+			  "Nope",
+			  "No way",
+			  "Of course not"
+			],
+			"ans": "No"
+		      },
+		      {
+			"ques": "What is the anwser to the Life, Universe and Everything?",
+			"ansSel": [
+			  "&lt;m&gt;42&lt;/m&gt;"
+			],
+			"ans": "42"
+		      },
+		      {
+			"ques": "Why did the chicken cross the road?",
+			"ansSel": [
+			  "Because she want to",
+			  "What is a chicken?",
+			  "The chicken would probably not be aware that he was crossing a road as chickens have limited congnitive abilities"
+			],
+			"ans": "To get to the other side"
+		      },
+		      {
+			"ques": "Get it?",
+			"ansSel": [
+			  "Try again",
+			  "Go back",
+			  "End tutorial"
+			],
+			"ans": "So clear!"
+		      }
+		    ]
+		  }
+		},
+		"rules": {
+		  "TrackEvent29": {
+		    "time": {},
+		    "pass": "true",
+		    "score": {
+		      "condition": "more-equal",
+		      "value": 0
+		    },
+		    "questions": {
+		      "name": "Tutorial",
+		      "assured": "correct answer",
+		      "userAnswer": true,
+		      "attr": "Tutorial|multiList|0",
+		      "type": "multiList",
+		      "n": 0,
+		      "ques": "Can you get this question wrong?"
+		    },
+		    "keyrule": "score",
+		    "manual": true
+		  }
+		},
+		"showHTML": false,
+		"hideHeader": false
+	      },
+	      "track": "1",
+	      "name": "TrackEvent18"
+	    },
+	    {
+              "id": "TrackEvent29",
+              "type": "text",
+              "popcornOptions": {
+		"start": 49.81853,
+		"end": 51.72214,
+		"target": "video-container",
+		"setMedia": 2,
+		"text": "Pretty clever!",
+		"linkUrl": "",
+		"position": "custom",
+		"alignment": "center",
+		"transition": "popcorn-fade",
+		"fontFamily": "Merriweather",
+		"fontSize": 10,
+		"fontColor": "#000000",
+		"shadow": false,
+		"shadowColor": "#444444",
+		"background": false,
+		"backgroundColor": "#888888",
+		"left": 0,
+		"top": 36.68099518040901,
+		"width": 99.76553341148886,
+		"zindex": 999,
+		"rules": {
+		  "TrackEvent38": {
+		    "pass": "true",
+		    "keyrule": "pass",
+		    "manual": true
+		  }
+		}
+	      },
+	      "track": "1",
+	      "name": "TrackEvent29"
+	    },
+	    {
+              "id": "TrackEvent38",
+              "type": "sequencer",
+              "popcornOptions": {
+		"start": 62.57313,
+		"end": 69.27821,
+		"source": [ "https://www.youtube.com/watch?v=wdX8y_xkz14&amp;feature=youtube_gdata"
+		],
+		"from": 19.09491525423729,
+		"title": "CAPTAIN OBVIOUS!",
+		"type": "YouTube",
+		"thumbnailSrc": "https://i.ytimg.com/vi/wdX8y_xkz14/0.jpg",
+		"duration": 43,
+		"target": "video-container",
+		"setMedia": 3,
+		"fallback": "",
+		"width": 100,
+		"height": 100,
+		"top": 0,
+		"left": 0,
+		"volume": 100,
+		"mute": false,
+		"zindex": 999,
+		"hidden": false,
+		"denied": false
+	      },
+	      "track": "1",
+	      "name": "TrackEvent38"
+	    },
+	    {
+              "id": "TrackEvent46",
+              "type": "image",
+              "popcornOptions": {
+		"start": 75.36337,
+		"end": 82,
+		"target": "video-container",
+		"left": 43.96248534583822,
+		"top": 0,
+		"setMedia": 4,
+		"src": "http://farm4.staticflickr.com/3774/12263147916_ea998528a6_o.png",
+		"linkSrc": "",
+		"tags": "",
+		"photosetId": "",
+		"count": 3,
+		"width": 56.03751465416178,
+		"height": 99.6222482740654,
+		"innerTop": 0,
+		"innerLeft": 0,
+		"innerWidth": 100,
+		"innerHeight": 100,
+		"title": "",
+		"transition": "popcorn-fade",
+		"zindex": 999
+	      },
+	      "track": "1",
+	      "name": "TrackEvent46"
+	    },
+	    {
+              "id": "TrackEvent47",
+              "type": "text",
+              "popcornOptions": {
+		"start": 82.67256,
+		"end": 87.67256,
+		"target": "video-container",
+		"setMedia": 5,
+		"text": "Try this quiz...",
+		"linkUrl": "",
+		"position": "custom",
+		"alignment": "left",
+		"transition": "popcorn-fade",
+		"fontFamily": "Merriweather",
+		"fontSize": 10,
+		"fontColor": "#000000",
+		"shadow": false,
+		"shadowColor": "#444444",
+		"background": false,
+		"backgroundColor": "#888888",
+		"left": 13.393903868698711,
+		"top": 32.089357822065914,
+		"width": 50.058616647127785,
+		"zindex": 999
+	      },
+	      "track": "1",
+	      "name": "TrackEvent47"
+	    },
+	    {
+              "id": "TrackEvent37",
+              "type": "quizme",
+              "popcornOptions": {
+		"start": 98.08194,
+		"end": 103.08194,
+		"target": "video-container",
+		"setMedia": 6,
+		"title": "A Question",
+		"name": "Tutorial",
+		"review": false,
+		"random": false,
+		"hideDetails": true,
+		"customFontSize": "19",
+		"color": "red",
+		"customColor": "#052938",
+		"customHeaderFontColor": "#ffffff",
+		"customBodyColor": "#ffffff",
+		"customBodyFontColor": "#000000",
+		"help": "You do not need help.",
+		"intro": "",
+		"numOfQuizQues": 0,
+		"indexQuestion": "3",
+		"showHTML": false,
+		"width": 78.57142857142857,
+		"height": 99.36507936507937,
+		"top": 0,
+		"left": 10,
+		"transition": "popcorn-fade",
+		"block": "No",
+		"zindex": 998,
+		"quizJSON": {
+		  "Tutorial": {
+		    "multiList": [
+		      {
+			"ques": "Can you get this question wrong?",
+			"ansSel": [
+			  "Nope",
+			  "No way",
+			  "Of course not"
+			],
+			"ans": "No"
+		      },
+		      {
+			"ques": "What is the anwser to the Life, Universe and Everything?",
+			"ansSel": [
+			  "&lt;m&gt;42&lt;/m&gt;"
+			],
+			"ans": "42"
+		      },
+		      {
+			"ques": "Why did the chicken cross the road?",
+			"ansSel": [
+			  "Because she want to",
+			  "What is a chicken?",
+			  "The chicken would probably not be aware that he was crossing a road as chickens have limited congnitive abilities"
+			],
+			"ans": "To get to the other side"
+		      },
+		      {
+			"ques": "Get it?",
+			"ansSel": [
+			  "Try again",
+			  "Go back",
+			  "End tutorial"
+			],
+			"ans": "So clear!"
+		      }
+		    ]
+		  }
+		},
+		"rules": {
+		  "TrackEvent41": {
+		    "time": {},
+		    "pass": "true",
+		    "score": {
+		      "condition": "more-equal",
+		      "value": 50
+		    },
+		    "questions": {
+		      "name": "Tutorial",
+		      "assured": "specific answer",
+		      "userAnswer": true,
+		      "attr": "Tutorial|multiList|2",
+		      "type": "multiList",
+		      "n": 2,
+		      "ques": "Why did the chicken cross the road?",
+		      "answers": [
+			"Because she want to"
+		      ]
+		    },
+		    "keyrule": "questions",
+		    "manual": true
+		  },
+		  "TrackEvent50": {
+		    "time": {},
+		    "pass": "true",
+		    "score": {
+		      "condition": "more-equal",
+		      "value": 50
+		    },
+		    "questions": {
+		      "name": "Tutorial",
+		      "assured": "specific answer",
+		      "userAnswer": "true",
+		      "attr": "Tutorial|multiList|2",
+		      "type": "multiList",
+		      "n": 2,
+		      "ques": "Why did the chicken cross the road?",
+		      "answers": [
+			"What is a chicken?"
+		      ]
+		    },
+		    "keyrule": "questions",
+		    "manual": true
+		  },
+		  "TrackEvent54": {
+		    "time": {},
+		    "pass": "true",
+		    "score": {
+		      "condition": "more-equal",
+		      "value": 50
+		    },
+		    "questions": {
+		      "name": "Tutorial",
+		      "assured": "specific answer",
+		      "userAnswer": true,
+		      "attr": "Tutorial|multiList|2",
+		      "type": "multiList",
+		      "n": 2,
+		      "ques": "Why did the chicken cross the road?",
+		      "answers": [
+			"To get to the other side",
+			"The chicken would probably not be aware that he was crossing a road as chickens have limited congnitive abilities"
+		      ]
+		    },
+		    "keyrule": "questions",
+		    "manual": true
+		  }
+		},
+		"hideHeader": false
+	      },
+	      "track": "1",
+	      "name": "TrackEvent37"
+	    },
+	    {
+              "id": "TrackEvent41",
+              "type": "sequencer",
+              "popcornOptions": {
+		"start": 123.56406,
+		"end": 132.83863,
+		"source": [ "https://www.youtube.com/watch?v=p3AmSUjwwiw&amp;feature=youtube_gdata"
+		],
+		"from": 26.725423728813556,
+		"title": "Sesame Street - Why did the chicken cross the road?",
+		"type": "YouTube",
+		"thumbnailSrc": "https://i.ytimg.com/vi/p3AmSUjwwiw/0.jpg",
+		"duration": 36,
+		"target": "video-container",
+		"setMedia": 9,
+		"fallback": "",
+		"width": 100,
+		"height": 100,
+		"top": 0,
+		"left": 0,
+		"volume": 100,
+		"mute": false,
+		"zindex": 998,
+		"hidden": false,
+		"denied": false
+	      },
+	      "track": "1",
+	      "name": "TrackEvent41"
+	    },
+	    {
+              "id": "TrackEvent52",
+              "type": "text",
+              "popcornOptions": {
+		"start": 158.02528,
+		"end": 168.10843,
+		"target": "video-container",
+		"text": "This is a chicken",
+		"linkUrl": "",
+		"position": "custom",
+		"alignment": "center",
+		"transition": "popcorn-fade",
+		"fontFamily": "Merriweather",
+		"fontSize": 10,
+		"fontColor": "#ffffff",
+		"shadow": true,
+		"shadowColor": "#444444",
+		"background": false,
+		"backgroundColor": "#888888",
+		"left": 40.44548651817116,
+		"top": 11.462810993877817,
+		"width": 59.3200468933177,
+		"zindex": 998
+	      },
+	      "track": "1",
+	      "name": "TrackEvent52"
+	    },
+	    {
+              "id": "TrackEvent39",
+              "type": "quizme",
+              "popcornOptions": {
+		"start": 200.27883,
+		"end": 207.7894,
+		"target": "video-container",
+		"setMedia": 11,
+		"title": "Simple statements",
+		"name": "Tutorial",
+		"review": false,
+		"random": false,
+		"hideDetails": true,
+		"customFontSize": "19",
+		"hideHeader": true,
+		"color": "transparent",
+		"customColor": "#052938",
+		"customHeaderFontColor": "#ffffff",
+		"customBodyColor": "#ffffff",
+		"customBodyFontColor": "#000000",
+		"help": "You do not need help.",
+		"intro": "",
+		"numOfQuizQues": "0",
+		"indexQuestion": "4",
+		"showHTML": false,
+		"width": 84.75967174677609,
+		"height": 99.6222482740654,
+		"top": 0,
+		"left": 15.005861664712777,
+		"transition": "popcorn-fade",
+		"block": "No",
+		"zindex": 999,
+		"quizJSON": {
+		  "Tutorial": {
+		    "multiList": [
+		      {
+			"ques": "Can you get this question wrong?",
+			"ansSel": [
+			  "Nope",
+			  "No way",
+			  "Of course not"
+			],
+			"ans": "No"
+		      },
+		      {
+			"ques": "What is the anwser to the Life, Universe and Everything?",
+			"ansSel": [
+			  "&lt;m&gt;42&lt;/m&gt;"
+			],
+			"ans": "42"
+		      },
+		      {
+			"ques": "Why did the chicken cross the road?",
+			"ansSel": [
+			  "Because she want to",
+			  "What is a chicken?",
+			  "The chicken would probably not be aware that he was crossing a road as chickens have limited congnitive abilities"
+			],
+			"ans": "To get to the other side"
+		      },
+		      {
+			"ques": "Get it?",
+			"ansSel": [
+			  "Try again",
+			  "Go back",
+			  "End tutorial"
+			],
+			"ans": "So clear!"
+		      }
+		    ]
+		  }
+		},
+		"rules": {
+		  "TrackEvent37": {
+		    "time": {},
+		    "pass": "true",
+		    "score": {
+		      "condition": "more-equal",
+		      "value": 50
+		    },
+		    "questions": {
+		      "name": "Tutorial",
+		      "assured": "specific answer",
+		      "userAnswer": "true",
+		      "attr": "Tutorial|multiList|3",
+		      "type": "multiList",
+		      "n": 3,
+		      "ques": "Get it?",
+		      "answers": [
+			"Try again",
+			"Go back"
+		      ]
+		    },
+		    "keyrule": "questions",
+		    "backward": true,
+		    "manual": true
+		  },
+		  "TrackEvent58": {
+		    "deleted": true
+		  }
+		}
+	      },
+	      "track": "1",
+	      "name": "TrackEvent39"
+	    },
+	    {
+              "id": "TrackEvent58",
+              "type": "text",
+              "popcornOptions": {
+		"start": 223,
+		"end": 225,
+		"target": "video-container",
+		"setMedia": 12,
+		"text": "The End",
+		"linkUrl": "",
+		"position": "custom",
+		"alignment": "center",
+		"transition": "popcorn-fade",
+		"fontFamily": "Merriweather",
+		"fontSize": 10,
+		"fontColor": "#000000",
+		"shadow": false,
+		"shadowColor": "#444444",
+		"background": false,
+		"backgroundColor": "#888888",
+		"left": 0,
+		"top": 36.05575094437932,
+		"width": 99.76553341148886,
+		"zindex": 999
+	      },
+	      "track": "1",
+	      "name": "TrackEvent58"
+	    }
+	    ]
+        },
+        {
+            "name": "Layer",
+            "id": "2",
+            "trackEvents": [
+	    {
+              "id": "TrackEvent7",
+              "type": "image",
+              "popcornOptions": {
+		"start": 8,
+		"end": 11,
+		"target": "video-container",
+		"setMedia": 0,
+		"src": "http://docu.softastur.org/images/d/d2/Mozilla_logo.svg",
+		"linkSrc": "",
+		"tags": "Mozilla",
+		"photosetId": "http://www.flickr.com/photos/etherworks/sets/72157630563520740/",
+		"count": 3,
+		"width": 99.64285714285714,
+		"height": 68.57142857142857,
+		"top": 30.476190476190478,
+		"left": 0,
+		"innerTop": 0,
+		"innerLeft": 0,
+		"innerWidth": 100,
+		"innerHeight": 100,
+		"title": "",
+		"transition": "popcorn-fade",
+		"zindex": 998,
+		"disable": false
+	      },
+	      "track": "1",
+	      "name": "TrackEvent7"
+	    },
+	    {
+              "id": "TrackEvent28",
+              "type": "text",
+              "popcornOptions": {
+		"start": 21,
+		"end": 24,
+		"target": "video-container",
+		"setMedia": 0,
+		"text": "try this one...",
+		"linkUrl": "",
+		"position": "custom",
+		"alignment": "right",
+		"transition": "popcorn-fade",
+		"fontFamily": "Merriweather",
+		"fontSize": 10,
+		"fontColor": "#000000",
+		"shadow": false,
+		"shadowColor": "#444444",
+		"background": false,
+		"backgroundColor": "#888888",
+		"left": 0.23446658851113714,
+		"top": 85.03321610003908,
+		"width": 99.76553341148886,
+		"zindex": 998
+	      },
+	      "track": "2",
+	      "name": "TrackEvent28"
+	    },
+	    {
+              "id": "TrackEvent49",
+              "type": "wikipedia",
+              "popcornOptions": {
+		"start": 135.54747,
+		"end": 168.07375,
+		"target": "video-container",
+		"lang": "en",
+		"src": "Chicken",
+		"width": 40.00000000000001,
+		"height": 99.41383352872217,
+		"top": 0,
+		"left": 0,
+		"transition": "popcorn-fade",
+		"zindex": 997
+	      },
+	      "track": "2",
+	      "name": "TrackEvent49"
+	    }
+            ]
+        },
+        {
+            "name": "Layer",
+            "id": "3",
+            "trackEvents": [
+	    {
+              "id": "TrackEvent43",
+              "type": "sequencer",
+              "popcornOptions": {
+		"source": ["https://www.youtube.com/watch?v=DBYjZTdrJlA&amp;feature=youtube_gdata&amp;butteruid=1391269579747"
+		],
+		"start": 0,
+		"end": 24.07083,
+		"type": "YouTube",
+		"thumbnailSrc": "https://i.ytimg.com/vi/DBYjZTdrJlA/0.jpg",
+		"from": 0,
+		"title": "Hot Butter- Popcorn Song",
+		"duration": 153,
+		"hidden": true,
+		"target": "video-container",
+		"setMedia": 0,
+		"fallback": "",
+		"width": 100,
+		"height": 100,
+		"top": 0,
+		"left": 0,
+		"volume": "60",
+		"mute": false,
+		"zindex": 997
+	      },
+	      "track": "3",
+	      "name": "TrackEvent43"
+	    },
+	    {
+              "id": "TrackEvent50",
+              "type": "sequencer",
+              "popcornOptions": {
+		"source": ["https://www.youtube.com/watch?v=nLwML2PagbY&amp;feature=youtube_gdata&amp;butteruid=1391272167716"
+		],
+		"start": 135.91596,
+		"end": 168.91596,
+		"type": "YouTube",
+		"thumbnailSrc": "https://i.ytimg.com/vi/nLwML2PagbY/0.jpg",
+		"from": 0,
+		"title": "Mercedes-Benz TV: MAGIC BODY CONTROL TV commercial &#34;Chicken&#34;",
+		"duration": 53,
+		"hidden": false,
+		"target": "video-container",
+		"fallback": "",
+		"width": 59.90621336459554,
+		"height": 99.83066301940863,
+		"top": 0,
+		"left": 39.976553341148886,
+		"volume": 100,
+		"mute": false,
+		"zindex": 996,
+		"isSuperTrackEvent": true,
+		"subTrackEvents": [
+		  "TrackEvent49",
+		  "TrackEvent52"
+		],
+		"denied": false
+	      },
+	      "track": "3",
+	      "name": "TrackEvent50"
+	    }
+            ]
+        },
+        {
+            "name": "Layer",
+            "id": "4",
+            "trackEvents": []
+        }]
+    }],
+    "name": "My Tutorial",
+    "template": "basic"
+}

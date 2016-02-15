@@ -1,0 +1,133 @@
+<!-- This Source Code Form is subject to the terms of the MIT license
+If a copy of the MIT license was not distributed with this file, you can
+obtain one at https://raw.github.com/mozilla/butter/master/LICENSE -->
+
+<div class="butter-dinamic-dialog butter-dialog">
+    <div class="butter-dialog-offset">
+    <div class="butter-dialog-body dinamic-body">
+
+        <div class="popup-tab-header">
+            <ul>
+                <li class="popup-tab-header-li">
+                    <a class="popup-tab-header-a butter-btn butter-active header-score">Score</a>
+                </li>
+                <li class="popup-tab-header-li">
+                    <a class="popup-tab-header-a butter-btn header-questions">Questions</a>
+                </li>
+                <li class="popup-tab-header-li">
+                    <a class="popup-tab-header-a butter-btn header-pass">Time</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="popup-tab-body">
+
+            <div class="popup-tab popup-score">
+                <fieldset class="trackevent-property-popup select">
+                    <label class="property-name">Assured by score</label>
+                    <select class="assured-score">
+                        <option value="more">More than</option>
+                        <option value="more-equal" selected>More than or equal to</option>
+                        <option value="less-equal">Less than or equal to</option>
+                        <option value="less">Less than</option>
+                        <option value="equal">Equal to</option>
+                    </select>
+                </fieldset>
+                <fieldset class="trackevent-property default input units">
+                    <label class="property-name">Percent</label>
+                    <div class="butter-form-append">
+                        <input class="score" type="number" placeholder="50" step="1" data-manifest-key="score">
+                        <span class="butter-unit">%</span>
+                    </div>
+                </fieldset>
+                <label class="property-name delete">Delete</label>
+            </div>
+
+            <div class="popup-tab popup-questions scrollbar-container">
+                <ul class="manager-sublist questions scrollbar-outer scrollbar-inner"></ul>
+            </div>
+
+            <div class="popup-tab popup-pass">
+                <fieldset class="trackevent-property-popup assured-time-pass fieldset-time">
+                    <div class="butter-form-radio">
+                        <input class="value-time-pass value-assure-time" type="radio" name="assured-time-pass">
+                        <label class="property-name">Assure by time</label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="trackevent-property-popup select fieldset-value-pass-time fieldset-time">
+                    <select class="value-time-select">
+                        <option value="more">More than</option>
+                        <option value="more-equal">More than or equal to</option>
+                        <option value="less-equal">Less than or equal to</option>
+                        <option value="less" selected>Less than</option>
+                        <option value="equal">Equal to</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="trackevent-property fieldset-value-pass-time fieldset-time">
+                    <input type="text" class="value-time" placeholder="mm:ss" data-manifest-key="time">
+                </fieldset>
+
+                <fieldset class="trackevent-property-popup assured-time-pass">
+                    <div class="butter-form-radio">
+                        <input class="value-time-pass value-assure-pass" type="radio" name="assured-time-pass" checked="true">
+                        <label class="property-name">Assure pass</label>
+                    </div>
+                </fieldset>
+                <fieldset class="trackevent-property-popup select fieldset-value-pass-time">
+                    <select class="assured-pass">
+                        <option value="true" selected>Assured pass</option>
+                        <option value="false">Denied pass</option>
+                    </select>
+                </fieldset>
+                <label class="property-name delete2">Delete</label>
+            </div>
+            
+            <div id="append-hidden-elements">
+
+                <div class="assured-pass-wrapper">
+                    <fieldset class="trackevent-property-popup assured-question-field">
+                        <div class="butter-form-radio">
+                            <input class="value-correct-answer assured-question" type="radio" name="assured-pass">
+                            <label class="property-name">Question answered correctly</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="trackevent-property-popup assured-question-field">
+                        <div class="butter-form-radio">
+                            <input class="value-incorrect-answer assured-question" type="radio" name="assured-pass">
+                            <label class="property-name">Question answered incorrectly</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="trackevent-property-popup assured-question-field">
+                        <div class="butter-form-radio">
+                            <input class="value-specific-answer assured-question" type="radio" name="assured-pass">
+                            <label class="property-name">Choose by specific answer</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="trackevent-property-popup select">
+                        <select class="specific-user-answer specific-answer">
+                            <option value="true" selected>User answers</option>
+                            <option value="false">User doesn't answer</option>
+                        </select>
+                    </fieldset>
+                </div>
+
+                <fieldset class="trackevent-property-popup specific-answer answer-checkbox-field">
+                    <div class="butter-form-checkbox specific-answer">
+                        <input class="value answer-checkbox" type="checkbox">
+                        <span class="property-name answer-label"></span>
+                    </div>
+                </fieldset>
+
+            </div>
+        </div>
+
+        <div class="bottom-border"></div>
+
+    </div>
+    <a class="close-button"><span class="icon icon-white icon-x"></span></a>
+</div>

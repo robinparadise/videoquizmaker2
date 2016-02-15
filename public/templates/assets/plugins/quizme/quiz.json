@@ -1,0 +1,50 @@
+{
+  "TrueFalse": { "tf": [
+    {
+      "ques": "Directions given by teachers should be very unclear.",
+      "ans": false
+    },
+    {
+      "ques": "The official language of all the countries in South America is Spanish.",
+      "ans": false,
+      "ansInfo": "This statement is false because of the absolute word all. Spanish is the official language of 9 of the 13 countries in South America. The exceptions are Brazil (Portuguese), French Guiana (French), Guyana (English), and Suriname (Dutch)."
+    },
+    {
+      "ques": "Shaking hands with women is acceptable in Indonesia.",
+      "ans": true
+    }
+  ]},
+
+  "Fill": { "fill": [
+    {
+      "ques": "What statement is considered the null operation of Python?",
+      "ans": "pass",
+      "ansInfo": "<code>pass</code> is the null operation."
+    },
+    { 
+      "ques": "Silver symbol.",
+      "ans": "Ag",
+      "ansInfo": "<br/>More info <a href='http://www.periodictable.com/Elements/079/index.html'>here</a>"
+    },
+    {
+      "ques": "Gold symbol.", 
+      "ans": "Au", 
+      "ansInfo": "Gold-Au <br/>More info <a href='http://www.periodictable.com/Elements/079/index.html'>here</a>"
+    }
+  ]},
+
+  "MultiList": { "multiList": [
+    { 
+      "ques": "Let 2x = 10. <br/>What is x?",
+      "ans": 5,
+      "ansSel": [ 10, 20, 0 ]
+    },
+    { 
+      "ques": "What is the capital of Canada?", 
+      "ans": "Ottawa, Ontario",
+      "ansInfo": "<a href='http://en.wikipedia.org/wiki/Ottawa'>The City of Ottawa</a> is where the capital of Canada.",
+      "ansSel": [ "Hanoi", "Washington, D.C." ],
+      "ansSelInfo": [ "Hanoi is the capital of Vietnam", "Washington, D.C. is the capital of the USA"]
+    }
+  ]}
+}

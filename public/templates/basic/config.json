@@ -1,0 +1,16 @@
+{
+  "name": "basic",
+  "template": "index.html",
+  "baseDir": "../../",
+  "savedDataUrl": "saved-data.json",
+  "editor": {
+    "googlemap": "{{baseDir}}templates/assets/editors/googlemap/googlemap-editor.js",
+    "popup": "{{baseDir}}templates/assets/editors/popup/popup-editor.js",
+    "image": "{{baseDir}}templates/assets/editors/image/image-editor.js",
+    "text": "{{baseDir}}templates/assets/editors/text/text-editor.js",
+    "quizme": "{{baseDir}}templates/assets/editors/quizme/quizme-editor.js",
+    "wikipedia": "{{baseDir}}templates/assets/editors/wikipedia/wikipedia-editor.js",
+    "animatePlugin": "{{baseDir}}templates/assets/editors/animatePlugin/animatePlugin-editor.js"
+  },
+  "maxPluginZIndex": 1000
+}

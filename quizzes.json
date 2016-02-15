@@ -1,0 +1,24 @@
+{
+    "multiList": [
+        {
+            "ques": "Can you get this question wrong?",
+            "ansSel": ["Nope", "No way", "Of course not"],
+            "ans": "No"
+        },
+        {
+            "ques": "What is the anwser to the Life, Universe and Everything?",
+            "ansSel": ["<m>42</m>"],
+            "ans": "42"
+        },
+        {
+            "ques": "Why did the chicken cross the road?",
+            "ansSel": ["Because she want to", "What is a chicken?", "The chicken would probably not be aware that he was crossing a road as chickens have limited congnitive abilities"],
+            "ans": "To get to the other side"
+        },
+        {
+            "ques": "Get it?",
+            "ansSel": ["Try again", "Go back", "End tutorial"],
+            "ans": "So clear!"
+        }
+    ]
+}

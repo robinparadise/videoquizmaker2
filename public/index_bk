@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <script src="//cdn.optimizely.com/js/206878104.js"></script>
+  <title>Videoquiz Maker</title>
+  <link rel="stylesheet" href="media/css/sandstone.css">
+  <link rel="stylesheet" href="/css/butter.ui.css">
+  <link href="https://mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet">
+  <script src="src/webmakernav.js"></script>
+  <link rel="stylesheet" href="media/css/page.css">
+  <!--[if lt IE 9]>
+    <script src="/media/js/html5shiv.js"></script>
+  <![endif]-->
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-35433268-12']);
+    _gaq.push(['_setDomainName', 'webmaker.org']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <meta property="og:title" content="Videoquiz Maker">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://popcorn.webmaker.org">
+  <meta property="og:image" content="https://popcorn.webmaker.org/resources/icons/fb-logo.png">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="200">
+  <meta property="og:image:height" content="200">
+  <meta property="og:description" content="Video beyond the box. Videoquiz Maker makes it easy to enhance, remix and share web video.">
+  <meta property="og:site_name" content="Mozilla Webmaker">
+</head>
+<body id="home">
+  <script type="text/javascript">
+    document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/, '');
+  </script>
+  <div id="outer-wrapper">
+    <a href="http://www.mozilla.org/" id="tabzilla">Mozilla</a>
+    <nav id="webmaker-nav"></nav>
+    <div id="wrapper">
+      <section>
+        <div class="container">
+          <div class="row">
+            <div class="hero-unit span12">
+                <h1></h1>
+            </div>
+          </div>
+          <div class="hero-unit row">
+            <div class="span3">
+              <h2>Video beyond the box</h2>
+              <p>
+                Videoquiz Maker makes it easy to enhance, remix and share web video. Use your web browser to combine video and audio with content from the rest of the web — from text, links and maps to pictures and live feeds.
+              </p>
+              <p class="intro-bar">
+                <a class="butter-btn btn-green start" href="/templates/basic">Start a project</a> <em>or</em> <a class="butter-btn btn-light start" href="/templates/basic/?savedDataUrl=tutorial.json">Take a tutorial</a>
+              </p>
+            </div>
+            <div class="span7">
+              <iframe class="iframe-template" src='http://popcorn.webmadecontent.org/r7_' width='560' height='358' mozallowfullscreen webkitallowfullscreen allowfullscreen></iframe>
+            </div>
+          </div>
+          <div id="projects">
+            <div class="row">
+              <div class="span10">
+                <h3>Remix and explore these great projects</h3>
+              </div>
+            </div>
+            <div class="row project-items">
+              <div class="span5">
+                <h4><a href="/templates/basic/?savedDataUrl=ted.json">Beau Lotto at TED</a></h4>
+                <div class="thumbnail preview-thumbnail">
+                  <img src="thumbnail-ted.png" alt="" data-butter-preview="http://popcorn.webmadecontent.org/11_">
+                  <a class="butter-btn btn-green start" href="/templates/basic/?savedDataUrl=ted.json">Remix it!</a>
+                </div>
+                <div class="caption">
+                  <p class="byline">by TED</p>
+                  <p>Remixes this fascinating TED talk by layering in links, quotes, Wikipedia articles, and maps of the locations mentioned in the talk.</p>
+                </div>
+              </div>
+              <div class="span5">
+                <h4><a href="/templates/basic/?savedDataUrl=projects/stop-and-frisk.json">Stop and frisk</a></h4>
+                <div class="thumbnail preview-thumbnail">
+                  <img src="thumbnail-stopandfrisk.png" alt="" data-butter-preview="http://popcorn.webmadecontent.org/y7_">
+                  <a class="butter-btn btn-green start" href="/templates/basic/?savedDataUrl=projects/stop-and-frisk.json">Remix it!</a>
+               </div>
+               <div class="caption">
+                  <p class="byline">by WNYC Radio Rookies</p>
+                  <p>By layering images, maps and links onto a SoundCloud audio pieces, these Radio Rookies are re-imagining modern radio.</p>
+                </div>
+               </div>
+              </div>
+            <div class="row project-items">
+              <div class="span5">
+                <h4><a href="/templates/basic/?savedDataUrl=lego.json">Lego Madlib</a></h4>
+                <div class="thumbnail preview-thumbnail">
+                  <img src="thumbnail-lego.png" alt="" data-butter-preview="http://popcorn.webmadecontent.org/1l_">
+                  <a class="butter-btn btn-green start" href="/templates/basic/?savedDataUrl=lego.json">Remix it!</a>
+                </div>
+                <div class="caption">
+                  <p class="byline">by Mozilla</p>
+                  <p>Tell the story of a minifig hero by changing the location of Google Maps, text and images.  A great way to learn the concepts of "Web Native Cinema!"</p>
+                </div>
+              </div>
+
+              <div class="span5">
+                <h4><a href="/templates/basic/?savedDataUrl=projects/wikihow.json">HowTo: chocolate-covered bacon</a></h4>
+                <div class="thumbnail preview-thumbnail">
+                  <img src="thumbnail-wikihow.png" alt="" data-butter-preview="http://popcorn.webmadecontent.org/fv_">
+                  <a class="butter-btn btn-green start" href="/templates/basic/?savedDataUrl=projects/wikihow.json">Remix it!</a>
+                </div>
+               <div class="caption">
+                  <p class="byline">by Wikihow</p>
+                   <p>See how Videoquiz Maker can make instructional videos pop in this step-by-step guide.</p>
+               </div>
+              </div>
+
+            </div>
+            <div class="row project-items">
+              <div class="span5">
+                <h4><a href="https://popcorn.webmaker.org/templates/basic/?savedDataUrl=/api/remix/499">Internet Bus Tour 2012</a></h4>
+                <div class="thumbnail preview-thumbnail">
+                  <img src="thumbnail-bus.png" alt="" data-butter-preview="http://popcorn.webmadecontent.org/dv_">
+                  <a class="butter-btn btn-green start" href="https://popcorn.webmaker.org/templates/basic/?savedDataUrl=/api/remix/499">Remix it!</a>
+                </div>
+                <div class="caption">
+                  <p class="byline">by Nimblebot</p>
+                  <p>Watch these three episodes that chronicle the Internet 2012 Bus Tour - a campaign to address issues related to the Open Internet during the US Presidential campaign.</p>
+                   <p class="episode">Episode <a class="butter-btn btn-light" href="http://popcorn.webmadecontent.org/dv">1</a> <a href="http://popcorn.webmadecontent.org/8n" class="butter-btn btn-light"> 2</a> <a href="http://popcorn.webmadecontent.org/83" class="butter-btn btn-light">3</a></p>
+                </div>
+              </div>
+              <div class="span5">
+                <h4><a href="https://popcorn.webmaker.org/templates/basic/?savedDataUrl=/api/remix/939">MAKE Magazine</a></h4>
+                <div class="thumbnail preview-thumbnail">
+                  <img src="thumbnail-make.png" data-butter-preview="http://popcorn.webmadecontent.org/q3_" alt="">
+                  <a class="butter-btn btn-green start" href="https://popcorn.webmaker.org/templates/basic/?savedDataUrl=/api/remix/939">Remix it!</a>
+                </div>
+                <div class="caption">
+                  <p class="byline">by MAKE magazine</p>
+                   <p>Colin Cunningham helps you make a "breadboard" circuit board - Videoquiz Maker gives you links, instructions, and a deeper dive.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row project-items">
+              <div class="span5">
+                <h4><a href="https://popcorn.webmaker.org/templates/basic/?savedDataUrl=/api/remix/775">101 things to do before you're 30</a></h4>
+                <div class="thumbnail preview-thumbnail">
+                  <img src="thumbnail-101.png" alt="" data-butter-preview="http://popcorn.webmadecontent.org/lj_">
+                  <a class="butter-btn btn-green start" href="https://popcorn.webmaker.org/templates/basic/?savedDataUrl=/api/remix/775">Remix it!</a>
+                </div>
+                <div class="caption">
+                  <p class="byline">by Schmittastic</p>
+                  <p>Counting down an under 30 bucket list, Amy lists 101 things she wants to do in the 1001 days before her 30th birthday.</p>
+                </div>
+              </div>
+              <div class="span5">
+                <h4><a href="/templates/basic/?savedDataUrl=projects/messing-around-with-maps.json">Messing Around With Maps</a></h4>
+                <div class="thumbnail preview-thumbnail">
+                  <img src="thumbnail-maps.png" data-butter-preview="http://popcorn.webmadecontent.org/qh_" alt="">
+                  <a class="butter-btn btn-green start" href="/templates/basic/?savedDataUrl=projects/messing-around-with-maps.json">Remix it!</a>
+                </div>
+                <div class="caption">
+                  <p class="byline">by Mozilla</p>
+                   <p>Explore how you can use the Maps event to create compelling storytelling experiences.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row project-items">
+             <div class="span5">
+                <h4><a href="/templates/basic/?savedDataUrl=soundscape.json">Soundscape</a></h4>
+                <div class="thumbnail preview-thumbnail">
+                  <img src="thumbnail-soundscape.png" alt="" data-butter-preview="http://popcorn.webmadecontent.org/17_">
+                  <a class="butter-btn btn-green start" href="/templates/basic/?savedDataUrl=soundscape.json">Remix it!</a>
+                </div>
+                <div class="caption">
+                  <p class="byline">by Mozilla</p>
+                  <p>With a SoundCloud sound as a guide, explore a place with photos from Flickr, Google Maps and Wikipedia articles.</p>
+                </div>
+              </div>
+              <div class="span5">
+                <h4><a href="/templates/basic/?savedDataUrl=tour.json">Neighbourhood tour</a></h4>
+                <div class="thumbnail preview-thumbnail">
+                  <img src="thumbnail-tour.png" data-butter-preview="http://popcorn.webmadecontent.org/1n_" alt="">
+                  <a class="butter-btn btn-green start" href="/templates/basic/?savedDataUrl=tour.json">Remix it!</a>
+                </div>
+                <div class="caption">
+                  <p class="byline">by Mozilla</p>
+                   <p>Uses Google Maps and Wikipedia to explore the elements of a neighbourhood. Remix this project to show others where <em>you</em> live!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="bottom-section">
+            <div class="row">
+              <div class="span10">
+                <ul class="thumbnails">
+                  <li class="span3 threeColumn">
+                    <div class="action">
+                      <div class="caption">
+                        <h5 class="title">
+                          <a href="http://popcornjs.org">Create advanced experiences with Popcorn.js</a>
+                        </h5>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="span3 threeColumn">
+                    <div class="action">
+                      <div class="caption">
+                        <h5 class="title">
+                          <a href="http://blog.mozilla.org/popcorn/">Read the Popcorn Blog</a>
+                        </h5>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="span3 threeColumn">
+                    <div class="action">
+                      <div class="caption">
+                        <h5 class="title">
+                          <a href="https://wiki.mozilla.org/PopcornMaker/QA">Help us beta test this site!</a>
+                        </h5>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="page-bottom">
+        <footer id="colophon">
+          <div class="row">
+            <div class="span2">
+              <h2><img src="/media/img/footer-logo.png" alt="Mozilla Webmaker"></h2>
+            </div>
+
+            <nav class="span2">
+              <h3>About</h3>
+              <ul>
+                <li><a href="mailto:mozparty@mozilla.org">Contact Us</a></li>
+                <li><a href="//www.mozilla.org/en-US/privacy-policy">Privacy Policy</a></li>
+                <li><a href="//www.mozilla.org/en-US/about/legal.html">Legal Notices</a></li>
+              </ul>
+            </nav>
+            <nav class="span2">
+              <h3>Connect with us</h3>
+              <ul>
+                <li><a href="http://twitter.com/mozilla/">Twitter</a></li>
+                <li><a href="https://www.facebook.com/mozilla/">Facebook</a></li>
+              </ul>
+            </nav>
+
+            <nav class="span2">
+              <h3>Make something</h3>
+              <ul>
+                <li><a href="#">Projects</a></li>
+                <li><a href="https://webmaker.org/tools/">Tools</a></li>
+                <li><a href="https://webmaker.org/events/">Events</a></li>
+              </ul>
+            </nav>
+
+            <nav class="span2">
+              <h3>Support our work</h3>
+              <ul>
+                <li><a href="https://donate.mozilla.org/page/contribute/join-mozilla?source=join_link">Donate</a></li>
+                <li><a href="https://mozillalabs.com/en-US/">Contribute</a></li>
+                <li><a href="https://donate.mozilla.org/page/contribute/firefoxtshirt">Buy a t-shirt</a></li>
+              </ul>
+            </nav>
+          </div>
+        </footer>
+      </section>
+    </div>
+    <div id="modal-overlay">
+      <div id="modal">
+       <a class="iframe-link butter-btn btn-green start" href="/templates/basic">Remix it!</a>
+       <span class="close-btn"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="//www.mozilla.org/media/js/libs/jquery-1.7.1.min.js"></script>
+  <script src="//www.mozilla.org/tabzilla/media/js/tabzilla.js"></script>
+  <script>
+
+    (function() {
+      var modal = document.querySelector( "#modal-overlay" ),
+          modalInner = modal.querySelector( "#modal" ),
+          iframeTemplate = document.querySelector( ".iframe-template" ),
+          previews = document.querySelectorAll( ".preview-thumbnail" ),
+          i, l;
+
+      function spawnIframe( e ) {
+        var newIframe = iframeTemplate.cloneNode( true ),
+            imageEl = this.querySelector( "img" ),
+            linkEl = this.querySelector( "a" ),
+            modalLinkEl = modal.querySelector( ".iframe-link" );
+
+        newIframe.src = imageEl.getAttribute( "data-butter-preview" );
+        console.log(imageEl.getAttribute( "data-butter-preview" ) );
+        modalLinkEl.href = linkEl.href;
+
+        modalInner.appendChild( newIframe );
+        modal.style.opacity = 1;
+        modal.style.visibility = "visible";
+
+        modal.addEventListener( "click", function closeModal() {
+          this.style.opacity = "";
+          this.style.visibility = "";
+          newIframe.parentNode.removeChild( newIframe );
+          modal.removeEventListener( "click", closeModal, false );
+        }, false );
+      }
+
+      for ( i = 0, l = previews.length; i < l ; i++ ) {
+        previews[ i ].addEventListener( "click", spawnIframe, false );
+      }
+
+
+    }());
+
+  </script>
+</body>
+</html>

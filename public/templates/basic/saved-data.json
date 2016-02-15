@@ -1,0 +1,22 @@
+{
+    "targets": [{
+        "id": "Target0",
+        "name": "video-container",
+        "element": "video-container"
+    }],
+    "media": [{
+        "id": "Media0",
+        "name": "Media0",
+        "url": "#t=,30",
+        "target": "video",
+        "duration": 30,
+        "controls": false,
+        "tracks": [{
+            "name": "Layer",
+            "id": "0",
+            "trackEvents": []
+        }]
+    }],
+    "name": "My new project",
+    "template": "test"
+}

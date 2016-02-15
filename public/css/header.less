@@ -1,0 +1,190 @@
+/*********************************************************
+* HEADER
+*/
+@_logoWidth: 245px;
+
+// Used to position absolute elements in the middle of our header bar area
+@HEADER_ALIGN_MIDDLE: 2.7;
+
+// Adds room to template to account for header
+.butter-header-spacing {
+  padding-top: @HEADER_SPACING;
+}
+
+.butter-editor-spacing {
+  .butter-header {
+    right: 0;
+  }
+}
+
+.butter-header {
+  z-index: @HEADER_Z_INDEX;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: @EDITOR_WIDTH;
+  height: @HEADER_SPACING;
+  .transition( all .2s ease-in-out );
+}
+
+/*********************************************************
+* Primary white nav bar
+*/
+
+.butter-header-primary {
+  position: relative;
+  background: #FFF;
+  color: lighten( @baseText, 10% );
+  height: 62px;
+  text-shadow: 0 1px 0 #FFF;
+  font-size: 0.95em;
+  border-bottom: 1px solid darken( @editorOutline, 10% );
+  box-shadow: 0 -1px 10px 0 rgba( 0, 0, 0, 0.1 );
+  .clearfix();
+}
+
+.butter-logo {
+  position: absolute;
+  top: 0;
+  left: 30px;
+  height: 62px;
+  width: @_logoWidth;
+  background: url( "../resources/logo.png" ) no-repeat;
+  cursor: pointer;
+}
+
+.butter-nav {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  margin-left: @_logoWidth + 50;
+  list-style: none;
+  width: 60%;
+  height: @PRIMARYHEADER_SPACING;
+  line-height: @PRIMARYHEADER_SPACING;
+  > li {
+    float: left;
+    padding: 0 20px;
+    &.butter-breadcrumbs {
+      position: relative;
+      padding: 0;
+      margin-right: 10px;
+      width: 1px;
+      height: 100%;
+      border-right: 1px solid @baseLightOutline;
+      .triangle( "right", 5px, #FFF, 1px, @baseLightOutline );
+    }
+  }
+}
+
+.butter-project-title {
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  color: @green;
+  cursor: pointer;
+  max-width: 55%;
+  min-width: 10%;
+  height: 100%;
+  position: relative;
+
+  &.no-click {
+    cursor: wait;
+  }
+
+  > input {
+    font-size: 14px;
+    border: 1px solid @green;
+    border-radius: 2px;
+    padding: 5px;
+    color: @green;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  a.butter-project-name {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .icon {
+    opacity: 0.4;
+    position: absolute;
+    visibility: hidden;
+    right: -5px;
+    top: @PRIMARYHEADER_SPACING / @HEADER_ALIGN_MIDDLE;
+  }
+  &:hover .icon {
+    visibility: visible;
+  }
+}
+
+#tabzilla {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: @HEADER_Z_INDEX + 100;
+}
+
+#tabzilla-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: @MODAL_Z_INDEX;
+}
+
+/*********************************************************
+* Buttons
+*/
+
+.butter-header {
+  .butter-btn {
+    text-shadow: none;
+  }
+}
+
+.butter-login-project-info {
+  position: relative;
+}
+
+.butter-login-project-info > ul {
+  position: absolute;
+  top: 48px;
+  left: 28px;
+  width: 175px;
+  border-top: 0;
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 10px 15px -5px rgba( 0, 0, 0, 0.6 );
+  padding: 0;
+  background: #FFF;
+  z-index: @MODAL_Z_INDEX;
+  li {
+    border-top: 1px solid @baseLight;
+    list-style: none;
+    font-size: 10px;
+    line-height: 35px;
+    margin: 0;
+    &:first-child {
+      border-top: none;
+    }
+    &:last-child {
+      border-radius: 0 0 2px 2px;
+    }
+  }
+  a {
+    text-decoration: none;
+    color: @baseText;
+    display: block;
+    padding: 0 20px;
+    height: 100%;
+    cursor: pointer;
+    &:hover {
+      color: @green;
+    }
+  }
+}
